@@ -22,4 +22,9 @@ jobs:
         #run multiple commands 
         run: |
           node -v
-          npm -v     
+          npm -v  
+      - name: python command
+        run: |
+          import platform
+          print(platform.processor())
+        shell: python              
