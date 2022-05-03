@@ -1,0 +1,24 @@
+name : Ngang
+age : 27
+address : "Bowie"
+active : true
+key: 
+    key1: value1
+    key2: 
+        key3: value3
+        key4: value4
+jsonObject: {key:{key1: value1, key2:{key3: value3, key4: value4}}}  
+array:
+    - item1
+    - item2
+    - {key: value}
+jsonArray: [item1, item2]
+ObjectsArray:
+    - key: value
+      key1: value1
+    - key: value
+      key2: value2
+LongText: >
+    yethetgssd
+    tehetvscsfc
+    theyafscdada    
