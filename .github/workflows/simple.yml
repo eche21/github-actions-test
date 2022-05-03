@@ -1,14 +1,25 @@
+
+# name of entire workflow
 name: Shell Commands
-
+#
+#name of the Github event that triggers the workflow
 on: [push]
-
+#
+#A workflow run is made up of one of more jobs
 jobs:
+  #name of job
   run-shell-command:
+    #type of machine to run the job on
     runs-on: ubuntu-latest
+    #A job contains a sequence of tasks called steps. An array of objects
     steps:
+      #The name of first step to display on Github
       - name: echo a string
-        run: eccho "Hello World"
+         #run command
+        run: echo "Hello World"
+      # Then name of second step  
       - name: multiline script
+        #run multiple commands 
         run: |
           node -v
           npm -v     
