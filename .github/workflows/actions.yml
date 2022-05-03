@@ -6,9 +6,15 @@ jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
+      - name: List Files
+        run: |
+           pwd
+           ls 
       - name: Simple JS Action
+        #A unique identifier for the step. You can use the id to reference the step
         id: greet
-        uses: actions/hello-world-javascript-action@v2
+        #Selects an actionto run as part of a step. An action is a reusable unit of code
+        uses: actions/hello-world-javascript-action@v1
         with: 
           who-to-greet: John
       - name: Log Greeting Time
