@@ -3,7 +3,7 @@
 name: Shell Commands
 #
 #name of the Github event that triggers the workflow
-on: [push]
+on: [pull_request]
 #
 #A workflow run is made up of one of more jobs
 jobs:
